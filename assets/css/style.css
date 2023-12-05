@@ -34,18 +34,19 @@ img{
 
 /*menu*/
 header{
-    background:#333;
+    background:#009794;
     color:#f2f2f2;
     padding: 1rem 0;
     position: fixed;
     left: 0;
     top:0;
     right: 0;
-    height: 65px;
+    height: 75px;
 }
 header a{
-    color: #cccccc;
+    color: #292929;
     text-decoration: none;
+    font-size: 15px;
 }
 .menu{
     width: 95%;
@@ -401,8 +402,10 @@ main{
     text-align: center;
 }
 .columna2{
+    width: 50%;
     /* width: 40%;
     float: right; */
+    text-align: center;
 }
 .columna2 img{
     width: 450px;
@@ -571,7 +574,15 @@ main{
         margin-top: 1rem;
     }
     .navigation ul{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #009794; /* Ajusta el color de fondo según tus preferencias */
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
     }
     .navigation ul.show{
         display: block;
@@ -642,3 +653,4 @@ main{
     }    
 
 }
+
